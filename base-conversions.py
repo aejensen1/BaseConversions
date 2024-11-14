@@ -29,7 +29,7 @@ def convert_base(number, base1, base2):
     if base1 == base2:
         return number
     if base1 == 10:
-        return from_base_10(number, base2)
+        return from_base_10(int(number), base2)
     else:
         return to_base_10(number, base1, base2)
 
@@ -62,6 +62,11 @@ def from_base_10(number, base):
     return ''.join(result)
 
 # Example of usage
+print("-----------------------")
+print("Base Conversion Program")
+print("-----------------------")
+print("Bases can range from 2 to 62, with digits 0-9 and letters A-Z and a-z")
+print("-----------------------")
 base1 = int(input("Type the base to convert from: "))
 base2 = int(input("Type the base to convert to: "))
 number = (input("Type the number to convert: "))
